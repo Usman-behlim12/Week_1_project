@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Usman Behlim — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — Web Developer / Designer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home">USMAN<span class="accent">BEHLIM</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="site-main">
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello — I'm <strong>USMAN</strong></h1>
+          <p class="lead">Full stack java Developer and UI Designer focused on responsive, accessible websites. I turn ideas into fast, polished experiences.</p>
+          <p class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </p>
+        </div>
+
+        <div class="hero-photo" aria-hidden="false">
+          <img src="images/profile.jpg" alt="Portrait of Your Name" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+        <p>I build clean, accessible interfaces using HTML, CSS, and JavaScript. I care about performance and clarity. Replace this paragraph with a short personal bio — 2–4 lines.</p>
+        <ul class="meta-list">
+          <li><strong>Location:</strong> Mumbai, india</li>
+          <li><strong>Role:</strong> Full Stack java Developer</li>
+          <li><strong>Email:</strong> <a href="mailto:you@example.com">usmanayubbehlim@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- Repeat each project card and customize -->
+          <article class="card">
+            <img src="images/project1.jpg" alt="Screenshot of Project 1" />
+            <div class="card-body">
+              <h3>Project One</h3>
+“Employee Management System using Java SE and JDBC that handles employee records with add, update, delete, and search operations.              <p class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/project2.jpg" alt="Screenshot of Project 2" />
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>A web-based PHP application that handles sales tracking, invoice generation, and sales data management efficiently.”</p>
+              <p class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills-row">
+          <ul class="skill-list">
+            <li>HTML5 &amp; Semantic Markup</li>
+            <li>CSS3 — Flexbox, Grid, Responsive</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Accessibility (A11y)</li>
+          </ul>
+          <div class="skill-progress" aria-hidden="true">
+            <!-- Visual only; keep accessible by text above -->
+            <div class="meter"><span style="width:86%"></span></div>
+            <div class="meter"><span style="width:78%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section" aria-labelledby="contact-title">
+      <div class="container small">
+        <h2 id="contact-title">Contact</h2>
+        <p>If you have a project or want to say hi — send a message.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required aria-required="true" />
+            <small class="error" id="err-name" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required aria-required="true" />
+            <small class="error" id="err-email" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            <small class="error" id="err-message" aria-live="polite"></small>
+          </div>
+
+          <div class="field actions">
+            <button type="submit" class="btn">Send Message</button>
+            <span id="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name — Built with HTML, CSS, JS</p>
+      <p class="footer-links">
+        <a href="#" rel="me">LinkedIn</a> · <a href="https://github.com/" rel="me">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
